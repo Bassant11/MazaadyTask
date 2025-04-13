@@ -13,13 +13,13 @@ enum APIEndpoint {
     var path: String {
         switch self {
         case .getUserInfo:
-            return "/products"
+            return "/user"
         case .getProducts:
             return "/products"
         case .getAds:
-            return ""
+            return "/advertisements"
         case .getTags:
-            return ""
+            return "/tags"
         }
     }
 }

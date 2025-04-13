@@ -12,7 +12,7 @@ protocol ProductRepository {
     
     func getProducts(completion: @escaping (Result<[Product], NetworkError>) -> Void)
     func getUserInfo(completion: @escaping (Result<UserInfoModel, NetworkError>) -> Void)
-    func getAds(completion: @escaping (Result<[AdsModel], NetworkError>) -> Void)
-    func getTags(completion: @escaping (Result<[TagsModel], NetworkError>) -> Void)
+    func getAds(completion: @escaping (Result<AdvertisementsResponse, NetworkError>) -> Void)
+    func getTags(completion: @escaping (Result<TagsResponse, NetworkError>) -> Void)
 
 }

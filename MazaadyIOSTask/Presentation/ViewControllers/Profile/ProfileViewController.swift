@@ -26,10 +26,12 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var productsCollectionViewHeight: NSLayoutConstraint!
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var profileTabsSegmentedControl: UISegmentedControl!
+    @IBOutlet weak var scrollVIew: UIScrollView!
     
     private var indicatorLine = UIView()
     private var viewModel: ProfileViewModel?
     private let disposeBag = DisposeBag()
+    private let refreshControl = UIRefreshControl()
 
     var tags = ["All","Car","Bags","Jackets","Scarfes","Shoes","Mobiles"]
     var prosuctsHeight = [true,false,false,true,false,true,true,false,false]
@@ -37,7 +39,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setup()
-        getProduct()
+        getData()
         CollectionViewSetup()
         setupSegmentedControlIndicator()
         segmentedControlSetup()
@@ -52,7 +54,14 @@ class ProfileViewController: UIViewController {
     {
         viewModel = AppDelegate.container.resolve(ProfileViewModel.self)
         searchBarTextField.placeholder = NSLocalizedString("Search", comment: "")
+        scrollVIew.refreshControl = refreshControl
+         refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+   
        
+    }
+    @objc private func refreshData() {
+        // Trigger data reload from the view model
+        viewModel?.loadAllData(forceRefresh: true)
     }
     func CollectionViewSetup()
     {
@@ -74,7 +83,6 @@ class ProfileViewController: UIViewController {
 
         tagsCollectionView.translatesAutoresizingMaskIntoConstraints = false
         tagsCollectionView.register  (UINib(nibName: "TagsCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "TagsCell")
-        tagsCollectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: COREVIDEO_FALSE, scrollPosition: .left)
         
 //
 //        let layout = UICollectionViewFlowLayout()
@@ -99,6 +107,7 @@ class ProfileViewController: UIViewController {
         productsCollectionViewHeight.constant = productsCollectionView.contentSize.height
         adsTableViewHeight.constant = adsTableView.contentSize.height
         tagsCollectionViewHeight.constant = tagsCollectionView.contentSize.height
+        userImage.layer.cornerRadius = 10
     
     }
     
@@ -124,58 +133,126 @@ class ProfileViewController: UIViewController {
     }
     
     @IBAction func searchBarButtonAction(_ sender: Any) {
-        
+        filterProducts()
     }
     
-    func getProduct()
+    func getData()
     {
-        viewModel?.loadProducts()
         viewModel?.error
-                  .subscribe(onNext: { [weak self] error in
-                      if let error = error {
-                          self?.showError(error.localizedDescription)
-                      }
-                  })
+            .subscribe(onNext: { [weak self] error in
+                if let error = error {
+                    self?.showError(error.localizedDescription)
+                }
+            })
         
-                  .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
         viewModel?.isLoading
-                   .observe(on: MainScheduler.instance)
-                   .bind { [weak self] isLoading in
-                       isLoading ? self?.showLoading() : self?.hideLoading()
-                   }
-                   .disposed(by: disposeBag)
+            .observe(on: MainScheduler.instance)
+            .bind { [weak self] isLoading in
+                if isLoading {
+                    self?.showLoading()  // Show loading indicator when data is loading
+                } else {
+                    self?.hideLoading()  // Hide loading indicator when data loading is finished
+                    self?.refreshControl.endRefreshing()  // End the refresh control animation
+                }
+            }
+            .disposed(by: disposeBag)
+        viewModel?.products
+            .observe(on: MainScheduler.instance)
+            .bind { [weak self] isLoading in
+                DispatchQueue.main.async {
+                    self?.productsCollectionView.reloadData()
+                    self?.productsCollectionView.layoutIfNeeded()
+                }
+            }
+            .disposed(by: disposeBag)
+        viewModel?.Ads
+            .observe(on: MainScheduler.instance)
+            .bind { [weak self] isLoading in
+                DispatchQueue.main.async {
+                    self?.adsTableView.reloadData()
+                    self?.adsTableView.layoutIfNeeded()
+                }
+            }
+            .disposed(by: disposeBag)
+        viewModel?.tags
+            .observe(on: MainScheduler.instance)
+            .bind { [weak self] isLoading in
+                DispatchQueue.main.async {
+                    self?.tagsCollectionView.reloadData()
+                    self?.tagsCollectionView.layoutIfNeeded()
+                    //   self?.tagsCollectionView.selectItem(at: IndexPath(item: 0, section: 0), animated: COREVIDEO_FALSE, scrollPosition: .left)
+                }
+            }
+            .disposed(by: disposeBag)
+        viewModel?.userInfo
+            .observe(on: MainScheduler.instance)
+            .bind { [weak self] isLoading in
+                DispatchQueue.main.async {
+                    self?.loadUserInfo()
+                }
+            }
+            .disposed(by: disposeBag)
+        viewModel?.loadAllData()
+        
+        
+    }
+    func loadUserInfo()
+    {
+        userName.text = viewModel?.userInfo.value.name ?? ""
+        userFolloersNumber.text = String(self.viewModel?.userInfo.value.followersCount ?? 0)
+        userFollowingNumber.text = String(self.viewModel?.userInfo.value.followingCount ?? 0)
+        loadImage(from:self.viewModel?.userInfo.value.image ?? "" , into: self.userImage)
+        
+    }
+    private func filterProducts() {
+        guard let products = viewModel?.products.value else { return }
+        let query = self.searchBarTextField.text ?? ""
+
+        let filtered = query.isEmpty
+            ? products
+            : products.filter { $0.name.lowercased().contains(query.lowercased()) }
+
+        viewModel?.products.accept(filtered)
     }
     private func showError(_ message: String) {
-          let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
-          alert.addAction(UIAlertAction(title: "OK", style: .default))
-          present(alert, animated: true)
-      }
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
     
 }
 extension ProfileViewController: PinterestLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForItemAt indexPath: IndexPath, with width: CGFloat) -> CGFloat {
         var cellHeight: CGFloat = 180
-        if self.prosuctsHeight[indexPath.row]
-        {
-            cellHeight += 50
-        }
-        if self.prosuctsHeight[indexPath.row]
-        {
-            cellHeight += 70
 
-        }
-        return cellHeight
+          guard let products = viewModel?.products.value, products.indices.contains(indexPath.row) else {
+              return cellHeight
+          }
+
+          if products[indexPath.row].offer != nil {
+              cellHeight += 50
+          }
+
+          if products[indexPath.row].endDate != nil {
+              cellHeight += 70
+          }
+
+          return cellHeight
     }
 }
 
 extension ProfileViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout,UITableViewDataSource,UITableViewDelegate
 {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return viewModel?.Ads.value.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "AdsCell", for: indexPath) as!  AdsTableViewCell
+        if let ads = viewModel?.Ads.value, ads.indices.contains(indexPath.row) {
+            cell.configureCell(with: ads[indexPath.row])
+        }
         return cell
 
     }
@@ -187,12 +264,12 @@ extension ProfileViewController : UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == productsCollectionView
         {
-            return 9
+            return viewModel?.products.value.count ?? 0
         }
     
         else
         {
-            return 7
+            return viewModel?.tags.value.count ?? 0
 
         }
 
@@ -206,14 +283,17 @@ extension ProfileViewController : UICollectionViewDataSource, UICollectionViewDe
         if collectionView == productsCollectionView
         {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as!  ProductCollectionViewCell
-            cell.layer.cornerRadius = 15
-            cell.cellConfigure(hide: !self.prosuctsHeight[indexPath.row])
+            if let products = viewModel?.products.value, products.indices.contains(indexPath.row) {
+                cell.cellConfigure(product: products[indexPath.row])
+            }
             return cell
         }
         else
         {
             let  cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TagsCell", for: indexPath) as!  TagsCollectionViewCell
-            cell.configureCell(with: self.tags[indexPath.row])
+            if let tags = viewModel?.tags.value, tags.indices.contains(indexPath.row) {
+                cell.configureCell(with: tags[indexPath.row])
+            }
             return cell
             
         }

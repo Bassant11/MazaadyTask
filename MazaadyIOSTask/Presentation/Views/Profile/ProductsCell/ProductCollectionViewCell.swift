@@ -9,9 +9,9 @@ import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var hoursNumber: UILabel!
     @IBOutlet weak var minutesNumber: UILabel!
     @IBOutlet weak var daysNumber: UILabel!
-    @IBOutlet weak var hoursNumber: UILabel!
     @IBOutlet weak var productPriceOffer: UILabel!
     @IBOutlet weak var productPriceBeforeOffer: UILabel!
     @IBOutlet weak var productPriceText: UILabel!
@@ -27,12 +27,24 @@ class ProductCollectionViewCell: UICollectionViewCell {
         
     }
     
-    func cellConfigure(hide:Bool) {
+    func cellConfigure(product:Product) {
+        productImage.layer.cornerRadius = 10
         cellOuterView.layer.cornerRadius = 15
         offerCountDownStack.layer.cornerRadius = 15
+       
+        productPriceText.text = String(product.price)
+        productName.text = product.name
+        productPriceOffer.text = String(product.offer ?? 0.0)
+        productPriceBeforeOffer.text = String(product.price)
         
+        let time = timeComponents(from: product.endDate ?? 0.0)
+        daysNumber.text = "\(time.days)"
+        hoursNumber.text = "\(time.hours)"
+        minutesNumber.text = "\(time.minutes)"
 
-        offerCountDownStack.isHidden = hide
-        specialOfferStack.isHidden = hide
+        loadImage(from: product.image, into: productImage)
+        offerCountDownStack.isHidden = (product.endDate == nil)
+        specialOfferStack.isHidden = (product.offer == nil)
+
     }
 }

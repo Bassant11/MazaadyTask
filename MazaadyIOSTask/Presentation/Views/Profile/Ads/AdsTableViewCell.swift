@@ -16,7 +16,8 @@ class AdsTableViewCell: UITableViewCell {
     }
 
     func configureCell(with ad: AdsModel) {
-        adImage.image = UIImage(named: ad.image)
+        adImage.layer.cornerRadius = 10
+        loadImage(from: ad.image, into: adImage)
     }
     
 }

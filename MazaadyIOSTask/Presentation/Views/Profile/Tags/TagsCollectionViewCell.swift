@@ -23,9 +23,9 @@ class TagsCollectionViewCell: UICollectionViewCell {
                updateSelectionStyle()
            }
        }
-func configureCell(with text: String) {
+    func configureCell(with tag:TagModel) {
  
-        tagText.text = text
+        tagText.text = tag.name
     }
     
     private func updateSelectionStyle() {

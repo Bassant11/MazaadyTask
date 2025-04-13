@@ -14,6 +14,7 @@ extension Container {
     func registerRepositories() {
         autoregister(NetworkManager.self, initializer: NetworkManager.init)
         autoregister(ProductRepository.self, initializer: DefaultProductRepository.init)
+        autoregister(CacheService.self, initializer: CacheService.init)
     }
 }
 

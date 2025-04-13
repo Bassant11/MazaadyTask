@@ -9,9 +9,11 @@
 import Foundation
 
 
-struct AdsModel  : Codable {
-    let image: String
+struct AdsModel: Codable {
     let id: Int
-    let name: String
-    let price: Double
+    let image: String
+}
+
+struct AdvertisementsResponse: Codable {
+    let advertisements: [AdsModel]
 }

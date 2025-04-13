@@ -31,8 +31,8 @@ extension DefaultProductRepository : ProductRepository {
         }
     }
     
-    func getAds(completion: @escaping (Result<[AdsModel], NetworkError>) -> Void) {
-        networkManager.get(.getAds, responseType: [AdsModel].self) { result in
+    func getAds(completion: @escaping (Result<AdvertisementsResponse, NetworkError>) -> Void) {
+        networkManager.get(.getAds, responseType: AdvertisementsResponse.self) { result in
             switch result {
             case .success(let ads):
                 completion(.success(ads))
@@ -42,8 +42,8 @@ extension DefaultProductRepository : ProductRepository {
         }
     }
     
-    func getTags(completion: @escaping (Result<[TagsModel], NetworkError>) -> Void) {
-        networkManager.get(.getTags, responseType: [TagsModel].self) { result in
+    func getTags(completion: @escaping (Result<TagsResponse, NetworkError>) -> Void) {
+        networkManager.get(.getTags, responseType: TagsResponse.self) { result in
             switch result {
             case .success(let tags):
                 completion(.success(tags))

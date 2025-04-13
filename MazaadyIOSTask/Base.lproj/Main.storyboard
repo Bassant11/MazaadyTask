@@ -429,6 +429,7 @@
                         <outlet property="productsCollectionView" destination="PVB-EK-WrG" id="BL3-IF-xJJ"/>
                         <outlet property="productsCollectionViewHeight" destination="orJ-iF-9Xs" id="C5w-er-U3H"/>
                         <outlet property="profileTabsSegmentedControl" destination="D51-hD-eK0" id="uS4-Hx-hEn"/>
+                        <outlet property="scrollVIew" destination="gG8-do-go1" id="o4G-it-AVr"/>
                         <outlet property="searchBarTextField" destination="akQ-xW-wRU" id="VYi-p5-VLd"/>
                         <outlet property="searchBarView" destination="nqM-Lk-WY2" id="3B6-G5-gcd"/>
                         <outlet property="tagsCollectionView" destination="Hwv-eF-PVM" id="iR7-x6-DKl"/>

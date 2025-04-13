@@ -9,8 +9,11 @@
 import Foundation
 
 
-struct TagsModel  : Codable {
+struct TagsResponse: Codable {
+    let tags: [TagModel]
+}
+
+struct TagModel: Codable {
     let id: Int
     let name: String
-    let price: Double
 }

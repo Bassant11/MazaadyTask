@@ -247,7 +247,7 @@
             <connections>
                 <outlet property="cellOuterView" destination="Z15-XU-P8c" id="vub-Ht-xO9"/>
                 <outlet property="daysNumber" destination="c7s-oM-rpa" id="DXx-s5-rg1"/>
-                <outlet property="hoursNumber" destination="X9q-Ac-Ppu" id="YSz-qq-77W"/>
+                <outlet property="hoursNumber" destination="97T-ct-4bn" id="nUM-iV-rQm"/>
                 <outlet property="minutesNumber" destination="pP7-6l-oo1" id="wln-3z-5bG"/>
                 <outlet property="offerCountDownStack" destination="oeo-f6-ltr" id="pyz-tz-MaA"/>
                 <outlet property="productImage" destination="dxY-jZ-eEI" id="kFi-JO-VRS"/>

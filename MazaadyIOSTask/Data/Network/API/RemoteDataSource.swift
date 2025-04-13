@@ -11,7 +11,7 @@ import Foundation
 class NetworkManager {
 
     
-    private let baseURL = "https://"
+    private let baseURL = "https://stagingapi.mazaady.com/api/interview-tasks"
         
     // Generic GET request method
     func get<T: Decodable>(_ endpoint: APIEndpoint, responseType: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
@@ -20,6 +20,7 @@ class NetworkManager {
         AF.request(url, method: .get)
             .validate() // Validate that status code is 200-299
             .responseDecodable(of: T.self) { response in
+                print(response.result,"RESPONSE")
                 switch response.result {
                 case .success(let decodedData):
                     completion(.success(decodedData))

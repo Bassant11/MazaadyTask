@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FollowersIcon 1" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-Yi-lPr">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eoT-Yi-lPr">
                         <rect key="frame" x="8" y="8" width="304" height="28"/>
                     </imageView>
                 </subviews>
@@ -37,7 +37,4 @@
             <point key="canvasLocation" x="-5" y="20"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="FollowersIcon 1" width="88.333335876464844" height="88"/>
-    </resources>
 </document>
