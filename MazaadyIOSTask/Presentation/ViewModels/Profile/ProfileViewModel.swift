@@ -33,7 +33,7 @@ class ProfileViewModel {
         init(useCase: ProductsUseCase) {
             self.useCase = useCase
         }
-        
+    
         func loadAllData(forceRefresh: Bool = false) {
             let dispatchGroup = DispatchGroup()
             isLoading.accept(true)

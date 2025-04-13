@@ -60,7 +60,6 @@ class ProfileViewController: UIViewController {
        
     }
     @objc private func refreshData() {
-        // Trigger data reload from the view model
         viewModel?.loadAllData(forceRefresh: true)
     }
     func CollectionViewSetup()
