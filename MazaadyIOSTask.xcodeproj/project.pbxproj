@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AF97972AD80A012BDD76E09 /* Pods_MazaadyIOSTask_MazaadyIOSTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97615648EFA4129524DEA050 /* Pods_MazaadyIOSTask_MazaadyIOSTaskUITests.framework */; };
+		EA0573E8E034271F1CB56735 /* Pods_MazaadyIOSTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB08A52FDF1125733DA434F /* Pods_MazaadyIOSTask.framework */; };
+		FB20D4CD68EB2E4379468BDA /* Pods_MazaadyIOSTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 506952EF23C544B7D56EEDA0 /* Pods_MazaadyIOSTaskTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		045981282DA87C0B00251537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045981092DA87C0900251537 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045981102DA87C0900251537;
+			remoteInfo = MazaadyIOSTask;
+		};
+		045981322DA87C0B00251537 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 045981092DA87C0900251537 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 045981102DA87C0900251537;
+			remoteInfo = MazaadyIOSTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0435069C2DAAA8A1001F82CD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		045981112DA87C0900251537 /* MazaadyIOSTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MazaadyIOSTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		045981272DA87C0B00251537 /* MazaadyIOSTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazaadyIOSTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		045981312DA87C0B00251537 /* MazaadyIOSTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MazaadyIOSTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FB08A52FDF1125733DA434F /* Pods_MazaadyIOSTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MazaadyIOSTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31ADC5E1A486598BBCFC7CA5 /* Pods-MazaadyIOSTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazaadyIOSTask.release.xcconfig"; path = "Target Support Files/Pods-MazaadyIOSTask/Pods-MazaadyIOSTask.release.xcconfig"; sourceTree = "<group>"; };
+		4524ECBE2361BA752A53DA14 /* Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		506952EF23C544B7D56EEDA0 /* Pods_MazaadyIOSTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MazaadyIOSTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530BC55D5E3BCDA1B95556DC /* Pods-MazaadyIOSTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazaadyIOSTask.debug.xcconfig"; path = "Target Support Files/Pods-MazaadyIOSTask/Pods-MazaadyIOSTask.debug.xcconfig"; sourceTree = "<group>"; };
+		6E8669D82952BB6842197F7A /* Pods-MazaadyIOSTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazaadyIOSTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-MazaadyIOSTaskTests/Pods-MazaadyIOSTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		97615648EFA4129524DEA050 /* Pods_MazaadyIOSTask_MazaadyIOSTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MazaadyIOSTask_MazaadyIOSTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D825B2F5EF70ACA51ED87DC1 /* Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F2281B477C7D5809A71ACD63 /* Pods-MazaadyIOSTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MazaadyIOSTaskTests.release.xcconfig"; path = "Target Support Files/Pods-MazaadyIOSTaskTests/Pods-MazaadyIOSTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		045981392DA87C0B00251537 /* Exceptions for "MazaadyIOSTask" folder in "MazaadyIOSTask" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 045981102DA87C0900251537 /* MazaadyIOSTask */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		045981132DA87C0900251537 /* MazaadyIOSTask */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				045981392DA87C0B00251537 /* Exceptions for "MazaadyIOSTask" folder in "MazaadyIOSTask" target */,
+			);
+			path = MazaadyIOSTask;
+			sourceTree = "<group>";
+		};
+		0459812A2DA87C0B00251537 /* MazaadyIOSTaskTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MazaadyIOSTaskTests;
+			sourceTree = "<group>";
+		};
+		045981342DA87C0B00251537 /* MazaadyIOSTaskUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MazaadyIOSTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0459810E2DA87C0900251537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0573E8E034271F1CB56735 /* Pods_MazaadyIOSTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045981242DA87C0B00251537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB20D4CD68EB2E4379468BDA /* Pods_MazaadyIOSTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0459812E2DA87C0B00251537 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AF97972AD80A012BDD76E09 /* Pods_MazaadyIOSTask_MazaadyIOSTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		045981082DA87C0900251537 = {
+			isa = PBXGroup;
+			children = (
+				045981132DA87C0900251537 /* MazaadyIOSTask */,
+				0459812A2DA87C0B00251537 /* MazaadyIOSTaskTests */,
+				045981342DA87C0B00251537 /* MazaadyIOSTaskUITests */,
+				045981122DA87C0900251537 /* Products */,
+				7CF6A4B53FF9C9373A9903D0 /* Pods */,
+				28BB172790A05477E8E170A1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		045981122DA87C0900251537 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				045981112DA87C0900251537 /* MazaadyIOSTask.app */,
+				045981272DA87C0B00251537 /* MazaadyIOSTaskTests.xctest */,
+				045981312DA87C0B00251537 /* MazaadyIOSTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28BB172790A05477E8E170A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FB08A52FDF1125733DA434F /* Pods_MazaadyIOSTask.framework */,
+				97615648EFA4129524DEA050 /* Pods_MazaadyIOSTask_MazaadyIOSTaskUITests.framework */,
+				506952EF23C544B7D56EEDA0 /* Pods_MazaadyIOSTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7CF6A4B53FF9C9373A9903D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				530BC55D5E3BCDA1B95556DC /* Pods-MazaadyIOSTask.debug.xcconfig */,
+				31ADC5E1A486598BBCFC7CA5 /* Pods-MazaadyIOSTask.release.xcconfig */,
+				D825B2F5EF70ACA51ED87DC1 /* Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.debug.xcconfig */,
+				4524ECBE2361BA752A53DA14 /* Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.release.xcconfig */,
+				6E8669D82952BB6842197F7A /* Pods-MazaadyIOSTaskTests.debug.xcconfig */,
+				F2281B477C7D5809A71ACD63 /* Pods-MazaadyIOSTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		045981102DA87C0900251537 /* MazaadyIOSTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0459813A2DA87C0B00251537 /* Build configuration list for PBXNativeTarget "MazaadyIOSTask" */;
+			buildPhases = (
+				8A97BD4DA886AB7637D5974C /* [CP] Check Pods Manifest.lock */,
+				0459810D2DA87C0900251537 /* Sources */,
+				0459810E2DA87C0900251537 /* Frameworks */,
+				0459810F2DA87C0900251537 /* Resources */,
+				6DEE557D2BC99911981913B4 /* [CP] Embed Pods Frameworks */,
+				0435069C2DAAA8A1001F82CD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				045981132DA87C0900251537 /* MazaadyIOSTask */,
+			);
+			name = MazaadyIOSTask;
+			productName = MazaadyIOSTask;
+			productReference = 045981112DA87C0900251537 /* MazaadyIOSTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		045981262DA87C0B00251537 /* MazaadyIOSTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0459813F2DA87C0B00251537 /* Build configuration list for PBXNativeTarget "MazaadyIOSTaskTests" */;
+			buildPhases = (
+				F90B0769FC32249ADFECA8AC /* [CP] Check Pods Manifest.lock */,
+				045981232DA87C0B00251537 /* Sources */,
+				045981242DA87C0B00251537 /* Frameworks */,
+				045981252DA87C0B00251537 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045981292DA87C0B00251537 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				0459812A2DA87C0B00251537 /* MazaadyIOSTaskTests */,
+			);
+			name = MazaadyIOSTaskTests;
+			productName = MazaadyIOSTaskTests;
+			productReference = 045981272DA87C0B00251537 /* MazaadyIOSTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		045981302DA87C0B00251537 /* MazaadyIOSTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 045981422DA87C0B00251537 /* Build configuration list for PBXNativeTarget "MazaadyIOSTaskUITests" */;
+			buildPhases = (
+				26E0BEAFB7B4FEABED79A9E0 /* [CP] Check Pods Manifest.lock */,
+				0459812D2DA87C0B00251537 /* Sources */,
+				0459812E2DA87C0B00251537 /* Frameworks */,
+				0459812F2DA87C0B00251537 /* Resources */,
+				92F37A3A83FE79F0F9BC1DDB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				045981332DA87C0B00251537 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				045981342DA87C0B00251537 /* MazaadyIOSTaskUITests */,
+			);
+			name = MazaadyIOSTaskUITests;
+			productName = MazaadyIOSTaskUITests;
+			productReference = 045981312DA87C0B00251537 /* MazaadyIOSTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		045981092DA87C0900251537 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					045981102DA87C0900251537 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					045981262DA87C0B00251537 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 045981102DA87C0900251537;
+					};
+					045981302DA87C0B00251537 = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 045981102DA87C0900251537;
+					};
+				};
+			};
+			buildConfigurationList = 0459810C2DA87C0900251537 /* Build configuration list for PBXProject "MazaadyIOSTask" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ar,
+			);
+			mainGroup = 045981082DA87C0900251537;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 045981122DA87C0900251537 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				045981102DA87C0900251537 /* MazaadyIOSTask */,
+				045981262DA87C0B00251537 /* MazaadyIOSTaskTests */,
+				045981302DA87C0B00251537 /* MazaadyIOSTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0459810F2DA87C0900251537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045981252DA87C0B00251537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0459812F2DA87C0B00251537 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		26E0BEAFB7B4FEABED79A9E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DEE557D2BC99911981913B4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MazaadyIOSTask/Pods-MazaadyIOSTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MazaadyIOSTask/Pods-MazaadyIOSTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MazaadyIOSTask/Pods-MazaadyIOSTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A97BD4DA886AB7637D5974C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MazaadyIOSTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92F37A3A83FE79F0F9BC1DDB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests/Pods-MazaadyIOSTask-MazaadyIOSTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90B0769FC32249ADFECA8AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MazaadyIOSTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0459810D2DA87C0900251537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		045981232DA87C0B00251537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0459812D2DA87C0B00251537 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		045981292DA87C0B00251537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045981102DA87C0900251537 /* MazaadyIOSTask */;
+			targetProxy = 045981282DA87C0B00251537 /* PBXContainerItemProxy */;
+		};
+		045981332DA87C0B00251537 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 045981102DA87C0900251537 /* MazaadyIOSTask */;
+			targetProxy = 045981322DA87C0B00251537 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0459813B2DA87C0B00251537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530BC55D5E3BCDA1B95556DC /* Pods-MazaadyIOSTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MazaadyIOSTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.MazaadyIOSTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0459813C2DA87C0B00251537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31ADC5E1A486598BBCFC7CA5 /* Pods-MazaadyIOSTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MazaadyIOSTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = Main.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.MazaadyIOSTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0459813D2DA87C0B00251537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0459813E2DA87C0B00251537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		045981402DA87C0B00251537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E8669D82952BB6842197F7A /* Pods-MazaadyIOSTaskTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.MazaadyIOSTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MazaadyIOSTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MazaadyIOSTask";
+			};
+			name = Debug;
+		};
+		045981412DA87C0B00251537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2281B477C7D5809A71ACD63 /* Pods-MazaadyIOSTaskTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.MazaadyIOSTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MazaadyIOSTask.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MazaadyIOSTask";
+			};
+			name = Release;
+		};
+		045981432DA87C0B00251537 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D825B2F5EF70ACA51ED87DC1 /* Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.MazaadyIOSTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MazaadyIOSTask;
+			};
+			name = Debug;
+		};
+		045981442DA87C0B00251537 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4524ECBE2361BA752A53DA14 /* Pods-MazaadyIOSTask-MazaadyIOSTaskUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Test.MazaadyIOSTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MazaadyIOSTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0459810C2DA87C0900251537 /* Build configuration list for PBXProject "MazaadyIOSTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0459813D2DA87C0B00251537 /* Debug */,
+				0459813E2DA87C0B00251537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0459813A2DA87C0B00251537 /* Build configuration list for PBXNativeTarget "MazaadyIOSTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0459813B2DA87C0B00251537 /* Debug */,
+				0459813C2DA87C0B00251537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0459813F2DA87C0B00251537 /* Build configuration list for PBXNativeTarget "MazaadyIOSTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045981402DA87C0B00251537 /* Debug */,
+				045981412DA87C0B00251537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		045981422DA87C0B00251537 /* Build configuration list for PBXNativeTarget "MazaadyIOSTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				045981432DA87C0B00251537 /* Debug */,
+				045981442DA87C0B00251537 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 045981092DA87C0900251537 /* Project object */;
+}

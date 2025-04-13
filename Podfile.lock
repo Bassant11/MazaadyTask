@@ -1,0 +1,39 @@
+PODS:
+  - Alamofire (5.10.2)
+  - RxCocoa (6.9.0):
+    - RxRelay (= 6.9.0)
+    - RxSwift (= 6.9.0)
+  - RxRelay (6.9.0):
+    - RxSwift (= 6.9.0)
+  - RxSwift (6.9.0)
+  - Swinject (2.9.1)
+  - SwinjectAutoregistration (2.9.1):
+    - Swinject (~> 2.9.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - RxCocoa
+  - RxSwift
+  - Swinject
+  - SwinjectAutoregistration
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Swinject
+    - SwinjectAutoregistration
+
+SPEC CHECKSUMS:
+  Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
+  RxCocoa: ac16414696ae706516be3e1ab00fcce5bdc9be8a
+  RxRelay: 6b0c930e5cef57d5fe2032571e5e65b78e3cbdb1
+  RxSwift: 31649ace6aceeb422e16ff71c60804f9c3281ed9
+  Swinject: a827d508c6270da03ec74e558e728917a888fa9b
+  SwinjectAutoregistration: a14d8ed61e88b0044a292958d63318b378375ca6
+
+PODFILE CHECKSUM: 6ed54050c499f8375a20c800357cad094b4e13d9
+
+COCOAPODS: 1.16.2
