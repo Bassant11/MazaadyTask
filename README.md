@@ -1,6 +1,6 @@
 #  Mazaady iOS Task
 
-This is an iOS application developed for an interview task. The app showcases a user's profile including personal information, tags, a product list, and advertisements.
+This iOS application was developed as part of an interview task. The app showcases a user's profile including personal information, tags, a product list, and advertisements. It also supports product filtering via a search bar and offers multi-language support including Arabic.
 
 ---
 
