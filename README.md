@@ -13,7 +13,8 @@ The project is built using **MVVM (Model-View-ViewModel)** architecture with **P
 | Layer         | Description                                                                 |
 |---------------|-----------------------------------------------------------------------------|
 | **View**      | UIKit-based screens (Storyboard + programmatic components).                 |
-| **ViewModel** | Handles business logic and state transformation using `RxSwift`.            |
+| **ViewModel**  | Handles presentation logic and state transformations using RxSwift.            |
+| **UseCase**    | Contains core business logic and manages caching responsibilities.                                   |
 | **Model**     | Codable models to match API responses (User, Product, Tag, Advertisement).  |
 | **Networking**| Abstracted API layer using `URLSession` and a service protocol.             |
 | **Dependency Injection** | Using **Swinject** to inject services and dependencies.         |
